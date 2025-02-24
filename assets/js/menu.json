@@ -1,0 +1,166 @@
+{
+  "menu": {
+    "Sandwiches": [
+      {
+        "name": "Freshi Sandwich",
+        "price": "190 mkd",
+        "ingredients": "Baguette, basil pesto, prosciutto, mozzarella, arugula, tomato, mix seeds"
+      },
+      {
+        "name": "Mortadella Sandwich",
+        "price": "190 mkd",
+        "ingredients": "Baguette, mortadella, sauce, gauda, egg, cucumber, mix green salad"
+      },
+      {
+        "name": "Tuna Sandwich",
+        "price": "180 mkd",
+        "ingredients": "Baguette, tuna, pate of olives, corn, tomato, red onion, mix green salad"
+      },
+      {
+        "name": "Veggie Sandwich",
+        "price": "180 mkd",
+        "ingredients": "Baguette, avocado, egg, veggie mayonnaise, olives, mix green salad"
+      },
+      {
+        "name": "Omelette Waffle",
+        "price": "170 mkd",
+        "ingredients": "3 eggs, cheese, chicken ham, mushrooms, arugula, sour cream, cucumber"
+      },
+      {
+        "name": "Omelette Feta Spinach",
+        "price": "150 mkd",
+        "ingredients": "3 eggs, feta cheese, spinach"
+      }
+    ],
+    "Wraps": [
+      {
+        "name": "Protein Wrap",
+        "price": "250 mkd",
+        "ingredients": "Tortilla, chicken meat, avocado, tomato, vegan mayonnaise, mix seeds, mix green salad"
+      },
+      {
+        "name": "Pesto Wrap",
+        "price": "260 mkd",
+        "ingredients": "Tortilla, chicken meat, basil pesto, arugula, avocado, tomato"
+      },
+      {
+        "name": "Vegan Wrap",
+        "price": "220 mkd",
+        "ingredients": "Tortilla, guacamole, tomato, spinach, arugula, olive pate"
+      },
+      {
+        "name": "Tuna Wrap",
+        "price": "240 mkd",
+        "ingredients": "Tortilla, tuna, corn, guacamole, red beans, onion, mix seeds, mix green salad"
+      }
+    ],
+    "Toast": [
+      {
+        "name": "Toast Classic",
+        "price": "140 mkd",
+        "ingredients": "Baguette, gauda, chicken ham or mortadella"
+      },
+      {
+        "name": "Feta Spinach Toast",
+        "price": "140 mkd",
+        "ingredients": "Baguette, baby spinach, feta cheese"
+      },
+			{
+        "name": "Feta Tomato Toast",
+        "price": "140 mkd",
+        "ingredients": "Baguette, baby spinach, tomato"
+      },
+      {
+        "name": "Toast Prosciutto",
+        "price": "160 mkd",
+        "ingredients":  "Baguette, gauda, prosciutto"
+      }
+    ],
+    "Bars": [
+      {
+        "name": "Snickers",
+        "price": "90 mkd",
+        "ingredients": "Peanut, coconut oil, dates, cashew milk, black chocolate, peanut butter, agave"
+      },
+      {
+        "name": "Twix",
+        "price": "90 mkd",
+        "ingredients": "Coconut, agave, coconut oil, coconut milk, peanut butter, black chocolate"
+      }
+    ],
+    "Salads": [
+      {
+        "name": "Mediterranean Salad",
+        "price": "180 mkd",
+        "ingredients": "Lettuce, chickpea/quinoa, avocado, hummus, tomato, cucumber, olives, red onion, mix seeds, dressing"
+      },
+      {
+        "name": "Tuna Salad",
+        "price": "200 mkd",
+        "ingredients": "Tuna, lettuce, red onion, corn, chickpea/quinoa, tomato, cucumber, olives, mix seeds, dressing"
+      },
+      {
+        "name": "Protein Salad",
+        "price": "210 mkd",
+        "ingredients": "Chicken meat, egg, corn, tomato, cucumber, mix seeds, dressing"
+      }
+    ],
+    "Chia Pudding": [
+      {
+        "name": "Chia M (300 ml)",
+        "price": "140 mkd",
+        "ingredients": "Chia, cashew milk, banana, mix season fruit, agave, peanut butter"
+      },
+      {
+        "name": "Chia L (350 ml)",
+        "price": "170 mkd",
+        "ingredients": "Chia, cashew milk, banana, mix season fruit, agave, peanut butter"
+      },
+      {
+        "name": "Oatmeal",
+        "price": "180 mkd",
+        "ingredients": "Oatmeal, banana, mix season fruit, agave, peanut butter"
+      },
+      {
+        "name": "Waffle with Chocolate and Banana",
+        "price": "150 mkd",
+        "ingredients": "Oat flour, eggs, agave, vanilla, season fruit, nougat nutella"
+      },
+      {
+        "name": "Waffle with Peanut Butter",
+        "price": "170 mkd",
+        "ingredients": "Oat flour, eggs, agave, vanilla, season fruit, chocolate, banana"
+      }
+    ],
+    "Coffee": [
+      {
+        "name": "Macchiato (small)",
+        "price": "80 mkd"
+      },
+      {
+        "name": "Macchiato (big)",
+        "price": "90 mkd"
+      },
+      {
+        "name": "Espresso",
+        "price": "70 mkd"
+      },
+      {
+        "name": "Nescafe",
+        "price": "110 mkd"
+      },
+      {
+        "name": "Coffee Latte",
+        "price": "130 mkd"
+      },
+      {
+        "name": "Cocoa Latte (70%)",
+        "price": "120 mkd"
+      },
+      {
+        "name": "Hot Cocoa (70%)",
+        "price": "90 mkd"
+      }
+    ]
+  }
+}

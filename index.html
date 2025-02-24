@@ -17,9 +17,7 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
 		rel="stylesheet">
-	<link 
-		href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" 
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
 	<!-- Vendor CSS Files -->
 	<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -32,7 +30,7 @@
 
 	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet">
-	
+
 </head>
 
 <body>
@@ -42,7 +40,8 @@
 		<div class="container d-flex justify-content-center justify-content-md-between">
 
 			<div class="contact-info d-flex align-items-center">
-				<i class="bi bi-phone d-flex align-items-center"><span>+389 71 306 681</span></i>
+				<i class="bi bi-phone d-flex align-items-center"><span><a href="tel: +389 71 306 681"> +389 71 306
+							681</a></span></i>
 			</div>
 			<div class="contact-info d-flex align-items-center">
 				<i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Fri: 07:30AM - 21PM, Sat:
@@ -175,8 +174,10 @@
 
 					<div class="col-lg-4">
 						<div class="box" data-aos="zoom-in" data-aos-delay="100">
-							<span><h4>Power-Packed, Nutritious Meals</h4></span>
-							
+							<span>
+								<h4>Nutritious Meals</h4>
+							</span>
+
 							<p>
 								Dive into a menu crafted with care, featuring nutrient-rich dishes that blend health
 								with irresistible
@@ -188,7 +189,9 @@
 
 					<div class="col-lg-4 mt-4 mt-lg-0">
 						<div class="box" data-aos="zoom-in" data-aos-delay="200">
-							<span><h4>Service That Delights</h4></span>
+							<span>
+								<h4>Service That Delights</h4>
+							</span>
 							<p>
 								Experience hospitality like no other. Our team delivers quick, friendly, and attentive
 								service to ensure
@@ -199,7 +202,9 @@
 
 					<div class="col-lg-4 mt-4 mt-lg-0">
 						<div class="box" data-aos="zoom-in" data-aos-delay="300">
-							<span><h4>Plant-Based Paradise</h4></span>
+							<span>
+								<h4>Our Plant-Based Paradise</h4>
+							</span>
 							<p>
 								Embrace a world of vibrant vegetarian and vegan options. From hearty classics to
 								creative plant-based
@@ -214,9 +219,50 @@
 			</div>
 		</section><!-- End Why Us Section -->
 
+		<!-- <section id="menu" class="menu section-bg">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>Menu</h2>
+					<p>Check Our Tasty Menu</p>
+				</div>
+				<div class="row" data-aos="fade-up" data-aos-delay="100">
+					<div class="col-lg-12 d-flex justify-content-center">
+						<ul id="menu-flters"> -->
+		<!-- Filter buttons will be inserted dynamically -->
+		<!-- </ul>
+					</div>
+				</div> -->
+		<!-- Filters for menu categories -->
+		<!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
+					<div class="col-lg-12 d-flex justify-content-center">
+						<ul id="menu-flters">
+							<li data-filter=".filter-sandwiches" class="filter-active">Sandwiches</li>
+							<li data-filter=".filter-wraps">Wraps</li>
+							<li data-filter=".filter-toast">Toast</li>
+							<li data-filter=".filter-bars">Bars</li>
+							<li data-filter=".filter-salads">Salads</li>
+							<li data-filter=".filter-sweets">Sweets</li>
+							<li data-filter=".filter-cakes">Raw Cakes</li>
+							<li data-filter=".filter-smoothies">Smoothies</li>
+							<li data-filter=".filter-juices">Fresh Juice</li>
+							<li data-filter=".filter-butters">Butters</li>
+							<li data-filter=".filter-coffee">Coffee</li>
+						</ul>
+					</div>
+				</div> -->
+
+		<!-- Menu Container -->
+		<!-- <div id="menu-container" class="row menu-container" data-aos="fade-up" data-aos-delay="200"> -->
+		<!-- Dynamic menu items will be injected here -->
+		<!-- </div>
+			</div>
+		</section> -->
+
+
+
 
 		<!-- ======= Menu Section ======= -->
-		<section id="menu" class="menu section-bg">
+		<!-- <section id="menu" class="menu section-bg">
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
@@ -228,118 +274,156 @@
 					<div class="col-lg-12 d-flex justify-content-center">
 						<ul id="menu-flters">
 							<li data-filter="*" class="filter-active">All</li>
-							<li data-filter=".filter-starters">Sweets</li>
 							<li data-filter=".filter-sandwiches">Sandwiches</li>
-							<li data-filter=".filter-specialty">Specialty</li>
+							<li data-filter=".filter-wraps">Wraps</li>
+							<li data-filter=".filter-toast">Toast</li>
+							<li data-filter=".filter-bars">Bars</li>
+							<li data-filter=".filter-salads">Salads</li>
+							<li data-filter=".filter-sweets">Sweets</li>
+							<li data-filter=".filter-cakes">Raw Cakes</li>
+							<li data-filter=".filter-smoothies">Smoothies</li>
+							<li data-filter=".filter-juices">Fresh Juice</li>
+							<li data-filter=".filter-butters">Butters</li>
+							<li data-filter=".filter-coffee">Coffee</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+				<div class="row menu-container" data-aos="fade-up" data-aos-delay="200"> -->
 
-					<div class="col-lg-6 menu-item filter-sandwiches">
-						<img src="assets/img/freshii-menu/freshi-sandwich.jpg" class="menu-img" alt="">
+		<!-- Sandwiches -->
+		<!-- <div class="col-lg-6 menu-item filter-sandwiches">
 						<div class="menu-content">
 							<a href="#">Freshii Sandwich</a>
-							<!-- <span>190 den.</span> -->
+							<span>190 mkd</span>
 						</div>
 						<div class="menu-ingredients">
-							Lorem, deren, trataro, filede, nerada
+							Baguette, basil pesto, prosciutto, mozzarella, arugula, tomato, mix seeds
 						</div>
 					</div>
-
 					<div class="col-lg-6 menu-item filter-sandwiches">
-						<img src="assets/img/freshii-menu/mortadella.jpg" class="menu-img" alt="">
 						<div class="menu-content">
-							<a href="#">Mortadela Sandwich</a>
-							<!-- <span>190 den.</span> -->
+							<a href="#">Mortadella Sandwich</a>
+							<span>190 mkd</span>
 						</div>
 						<div class="menu-ingredients">
-							Lorem, deren, trataro, filede, nerada
+							Baguette, mortadella, sauce, gauda, egg, cucumber, mix green salad
 						</div>
 					</div>
-
 					<div class="col-lg-6 menu-item filter-sandwiches">
-						<img src="assets/img/freshii-menu/tuna-sandwich.jpg" class="menu-img" alt="">
 						<div class="menu-content">
 							<a href="#">Tuna Sandwich</a>
-							<!-- <span>180 den.</span> -->
+							<span>180 mkd</span>
 						</div>
 						<div class="menu-ingredients">
-							A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+							Baguette, tuna, olive pate, corn, tomato, red onion, mix green salad
 						</div>
 					</div>
-
 					<div class="col-lg-6 menu-item filter-sandwiches">
-						<img src="assets/img/freshii-menu/vege.jpg" class="menu-img" alt="">
 						<div class="menu-content">
-							<a href="#">Vege Sandwich</a>
-							<!-- <span>180 den.</span> -->
+							<a href="#">Veggie Sandwich</a>
+							<span>180 mkd</span>
 						</div>
 						<div class="menu-ingredients">
-							Lorem, deren, trataro, filede, nerada
+							Baguette, avocado, egg, veggie mayonnaise, olives, mix green salad
 						</div>
-					</div>
+					</div> -->
 
-					<div class="col-lg-6 menu-item filter-specialty">
-						<img src="assets/img/freshii-menu/proteinski.jpg" class="menu-img" alt="">
+		<!-- Wraps -->
+		<!-- <div class="col-lg-6 menu-item filter-wraps">
 						<div class="menu-content">
 							<a href="#">Protein Wrap</a>
-							<!-- <span>250 den.</span> -->
+							<span>250 mkd</span>
 						</div>
 						<div class="menu-ingredients">
-							Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+							Tortilla, chicken meat, avocado, tomato, vegan mayonnaise, mix seeds, mix green salad
 						</div>
 					</div>
-
-					<div class="col-lg-6 menu-item filter-starters">
-						<img src="assets/img/freshii-menu/pesto.jpg" class="menu-img" alt="">
+					<div class="col-lg-6 menu-item filter-wraps">
 						<div class="menu-content">
 							<a href="#">Pesto Wrap</a>
-							<!-- <span>260 den.</span> -->
+							<span>260 mkd</span>
 						</div>
 						<div class="menu-ingredients">
-							Lorem, deren, trataro, filede, nerada
+							Tortilla, chicken meat, basil pesto, arugula, avocado, tomato
 						</div>
 					</div>
-
-					<div class="col-lg-6 menu-item filter-salads">
-						<img src="assets/img/freshii-menu/tost.jpg" class="menu-img" alt="">
+					<div class="col-lg-6 menu-item filter-wraps">
 						<div class="menu-content">
-							<a href="#">Classic Toast</a>
-							<!-- <span>130 den.</span> -->
+							<a href="#">Vegan Wrap</a>
+							<span>220 mkd</span>
 						</div>
 						<div class="menu-ingredients">
-							Fresh spinach, crisp romaine, tomatoes, and Greek olives
+							Tortilla, guacamole, tomato, spinach, arugula, olive pate
 						</div>
-					</div>
+					</div> -->
 
-					<div class="col-lg-6 menu-item filter-salads">
-						<img src="assets/img/freshii-menu/cia.jpg" class="menu-img" alt="">
+		<!-- Toast -->
+		<!-- <div class="col-lg-6 menu-item filter-toast">
 						<div class="menu-content">
-							<a href="#">Chia Classic</a>
-							<!-- <span>140</span> -->
+							<a href="#">Toast Classic</a>
+							<span>140 mkd</span>
 						</div>
 						<div class="menu-ingredients">
-							Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+							Baguette, gauda, chicken ham or mortadella
 						</div>
-					</div>
+					</div> -->
 
-					<div class="col-lg-6 menu-item filter-specialty">
-						<img src="assets/img/freshii-menu/rafaela.jpg" class="menu-img" alt="">
-						<div class="menu-content">
-							<a href="#">Raffaelo Choco Bomb</a>
-							<!-- <span>$12.95</span> -->
-						</div>
-						<div class="menu-ingredients">
-							Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
-						</div>
-					</div>
+		<!-- Add other categories following the same pattern -->
 
-				</div>
+		<!-- </div>
 
 			</div>
-		</section><!-- End Menu Section -->
+		</section> -->
+		<!-- End Menu Section -->
+
+		<section id="menu" class="menu section-bg">
+			<div class="container" data-aos="fade-up">
+
+				<div class="section-title">
+					<h2>Menu</h2>
+					<p>Check Our Tasty Menu</p>
+				</div>
+				<div class="background">
+					<div class="slider-container" id="slider1">
+						<div class="slider"></div> <!-- This will be populated dynamically -->
+						<button class="prev">&#10094;</button>
+						<button class="next">&#10095;</button>
+					</div>
+					<div class="dots-container"></div> <!-- Dots will be created dynamically -->
+				</div>
+			</div>
+
+
+
+
+
+
+<!-- 
+				<div class="background">
+					<div class="slider-container">
+						<div class="slider">
+							<div class="slide"><img src="assets/img/freshii-menu/comming soon.jpg" alt="Image 1"></div>
+							<div class="slide"><img src="assets/img/freshii-menu/comming soon.jpg" alt="Image 2"></div>
+							<div class="slide"><img src="assets/img/freshii-menu/comming soon.jpg" alt="Image 3"></div>
+							<div class="slide"><img src="assets/img/freshii-menu/comming soon.jpg" alt="Image 4"></div>
+							<div class="slide"><img src="assets/img/freshii-menu/comming soon.jpg" alt="Image 5"></div>
+							<div class="slide"><img src="assets/img/freshii-menu/comming soon.jpg" alt="Image 6"></div>
+						</div>
+						<button class="prev">&#10094;</button>
+						<button class="next">&#10095;</button>
+					</div>
+					<div class="dots-container">
+						<span class="dot" data-index="0"></span>
+						<span class="dot" data-index="1"></span>
+						<span class="dot" data-index="2"></span>
+						<span class="dot" data-index="3"></span>
+						<span class="dot" data-index="4"></span>
+						<span class="dot" data-index="5"></span>
+					</div>
+				</div> -->
+			</div>
+		</section>
 
 		<!-- ======= Specials Section ======= -->
 		<section id="specials" class="specials">
@@ -362,12 +446,21 @@
 							<li class="nav-item">
 								<a class="nav-link" data-bs-toggle="tab" href="#tab-3">Chips</a>
 							</li>
-							<!-- <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
-              </li> -->
+							<li class="nav-item">
+								<a class="nav-link" data-bs-toggle="tab" href="#tab-4">Wafles</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-bs-toggle="tab" href="#tab-5">Honey</a>
+								<!-- </li>
+							<li class="nav-item">
+								<a class="nav-link" data-bs-toggle="tab" href="#tab-6">Nostrum qui quasi</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-bs-toggle="tab" href="#tab-7">Iusto ut expedita aut</a>
+							</li> -->
+
+
+
 						</ul>
 					</div>
 					<div class="col-lg-9 mt-4 mt-lg-0">
@@ -387,7 +480,7 @@
 											without any additives or preservatives.</p>
 									</div>
 									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/freshii-menu/puter.jpg" alt="" class="img-fluid">
+										<!-- <img src="assets/img/freshii-menu/puter.jpg" alt="" class="img-fluid"> -->
 									</div>
 								</div>
 							</div>
@@ -408,7 +501,7 @@
 											without compromising on health-conscious choices.</p>
 									</div>
 									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/freshii-menu/nutella.jpg" alt="" class="img-fluid">
+										<!-- <img src="assets/img/freshii-menu/nutella.jpg" alt="" class="img-fluid"> -->
 									</div>
 								</div>
 							</div>
@@ -428,42 +521,38 @@
 											Elevate your snacking experience today!</p>
 									</div>
 									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/freshii-menu/cips.jpeg" alt="" class="img-fluid">
+										<!-- <img src="assets/img/freshii-menu/cips.jpeg" alt="" class="img-fluid"> -->
 									</div>
 								</div>
 							</div>
 							<div class="tab-pane" id="tab-4">
 								<div class="row">
 									<div class="col-lg-8 details order-2 order-lg-1">
-										<h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-										<p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure
-											voluptas iure porro quis
-											delectus</p>
-										<p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-											necessitatibus aliquam
-											fugiat debitis quis velit. Eum ex maxime error in consequatur corporis
-											atque. Eligendi asperiores
-											sed qui veritatis aperiam quia a laborum inventore</p>
+										<h3>Healthy Waffles</h3>
+										<p class="fst-italic">Wholesome, delicious, and packed with natural goodness.</p>
+										<p>Our healthy waffles are crafted with whole grains, natural sweeteners, and nutrient-rich
+											ingredients. A perfect balance of flavor and nutrition, these waffles are ideal for a guilt-free
+											breakfast or snack. Experience the joy of eating clean while savoring every bite of this wholesome
+											treat.</p>
 									</div>
+
 									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/specials-4.png" alt="" class="img-fluid">
+										<!-- <img src="assets/img/specials-4.png" alt="" class="img-fluid"> -->
 									</div>
 								</div>
 							</div>
 							<div class="tab-pane" id="tab-5">
 								<div class="row">
 									<div class="col-lg-8 details order-2 order-lg-1">
-										<h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-										<p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro
-											quia.</p>
-										<p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis
-											recusandae ut non quam ut
-											quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed
-											est sint aut vitae
-											molestiae voluptate vel</p>
+										<h3>Natural Honey & Berry-Infused Delight</h3>
+										<p class="fst-italic">Pure, golden sweetness straight from nature’s heart.</p>
+										<p>Our natural honey is unprocessed and packed with nutrients, offering a taste of untouched nature.
+											For a flavorful twist, try our honey infused with handpicked mountain berries—an irresistible
+											combination of sweetness and tangy richness. Perfect for elevating your tea, toast, or favorite
+											recipes while staying 100% natural.</p>
 									</div>
 									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/specials-5.png" alt="" class="img-fluid">
+										<!-- <img src="assets/img/specials-5.png" alt="" class="img-fluid"> -->
 									</div>
 								</div>
 							</div>
@@ -475,7 +564,7 @@
 		</section><!-- End Specials Section -->
 
 		<!-- ======= Events Section ======= -->
-		<section id="events" class="events d-none">
+		<!-- <section id="events" class="events d-none">
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
@@ -602,7 +691,8 @@
 				</div>
 
 			</div>
-		</section><!-- End Events Section -->
+		</section> -->
+		<!-- End Events Section -->
 
 		<!-- ======= Book A Table Section ======= -->
 		<!-- <section id="book-a-table" class="book-a-table d-none">
@@ -763,96 +853,27 @@
 
 		<!-- ======= Gallery Section ======= -->
 		<section id="gallery" class="gallery">
-
 			<div class="container" data-aos="fade-up">
 				<div class="section-title">
 					<h2>Gallery</h2>
 					<p>Some photos from Our Restaurant</p>
 				</div>
+				<div class="background">
+					<div class="slider-container" id="slider2">
+						<div class="slider"></div> <!-- This will be populated dynamically -->
+						<button class="prev">&#10094;</button>
+						<button class="next">&#10095;</button>
+					</div>
+					<div class="dots-container"></div> <!-- Dots will be created dynamically -->
+				</div>
 			</div>
 
-			<div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-				<div class="row g-0">
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/freshii-menu/proteinski.jpg" class="gallery-lightbox"
-								data-gall="gallery-item">
-								<img src="assets/img/freshii-menu/proteinski.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/freshii-menu/oves.jpg" class="gallery-lightbox"
-								data-gall="gallery-item">
-								<img src="assets/img/freshii-menu/oves.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/freshii-menu/cia.jpg" class="gallery-lightbox" data-gall="gallery-item">
-								<img src="assets/img/freshii-menu/cia.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/freshii-menu/jaffa.jpg" class="gallery-lightbox"
-								data-gall="gallery-item">
-								<img src="assets/img/freshii-menu/jaffa.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/freshii-menu/veryberry.jpg" class="gallery-lightbox"
-								data-gall="gallery-item">
-								<img src="assets/img/freshii-menu/veryberry.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/freshii-menu/tost.jpg" class="gallery-lightbox"
-								data-gall="gallery-item">
-								<img src="assets/img/freshii-menu/tost.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/freshii-menu/torta.jpg" class="gallery-lightbox"
-								data-gall="gallery-item">
-								<img src="assets/img/freshii-menu/torta.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/freshii-menu/tuna.jpg" class="gallery-lightbox"
-								data-gall="gallery-item">
-								<img src="assets/img/freshii-menu/tuna.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-				</div>
-
+			
 			</div>
 		</section><!-- End Gallery Section -->
 
 		<!-- ======= Chefs Section ======= -->
-		<section id="chefs" class="chefs d-none">
+		<!-- <section id="chefs" class="chefs d-none">
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
@@ -919,7 +940,8 @@
 				</div>
 
 			</div>
-		</section><!-- End Chefs Section -->
+		</section> -->
+		<!-- End Chefs Section -->
 
 		<!-- ======= Contact Section ======= -->
 		<section id="contact" class="contact">
@@ -965,13 +987,13 @@
 							<div class="email">
 								<i class="bi bi-envelope"></i>
 								<h4>Email:</h4>
-								<p>info@freshii.com</p>
+								<p>freshii.healthyfood@gmail.com</p>
 							</div>
 
 							<div class="phone">
 								<i class="bi bi-phone"></i>
 								<h4>Call:</h4>
-								<p>+389 71 306 681</p>
+								<p><a href="tel: +389 71 306 681"> +389 71 306 681</a></p>
 							</div>
 
 						</div>
@@ -983,21 +1005,17 @@
 						<form action="forms/contact.php" method="post" role="form" class="php-email-form">
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<input type="text" name="name" class="form-control" id="name"
-										placeholder="Your Name" required>
+									<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
 								</div>
 								<div class="col-md-6 form-group mt-3 mt-md-0">
-									<input type="email" class="form-control" name="email" id="email"
-										placeholder="Your Email" required>
+									<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
 								</div>
 							</div>
 							<div class="form-group mt-3">
-								<input type="text" class="form-control" name="subject" id="subject"
-									placeholder="Subject" required>
+								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
 							</div>
 							<div class="form-group mt-3">
-								<textarea class="form-control" name="message" rows="8" placeholder="Message"
-									required></textarea>
+								<textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
 							</div>
 							<div class="my-3">
 								<div class="loading">Loading</div>
@@ -1028,15 +1046,15 @@
 							<p>
 								Ul. Ivan Kozarov br.58a, <br>
 								Skopje<br><br>
-								<strong>Phone:</strong> +389 71 306 681<br>
+								<strong>Phone:</strong><a href="tel: +389 71 306 681"> +389 71 306 681</a><br>
 								<strong>Email:</strong> info@example.com<br>
 							</p>
 							<div class="social-links mt-3">
 								<!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-								<a href="https://www.facebook.com/profile.php?id=100086759745574" class="facebook"
-									target="_blank"><i class="bx bxl-facebook"></i></a>
-								<a href="https://www.instagram.com/freshii_healthyfood/" class="instagram"
-									target="_blank"><i class="bx bxl-instagram"></i></a>
+								<a href="https://www.facebook.com/profile.php?id=100086759745574" class="facebook" target="_blank"><i
+										class="bx bxl-facebook"></i></a>
+								<a href="https://www.instagram.com/freshii_healthyfood/" class="instagram" target="_blank"><i
+										class="bx bxl-instagram"></i></a>
 								<!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
 								<!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
 							</div>
@@ -1054,7 +1072,7 @@
 						</ul>
 					</div>
 
-					<div class="col-lg-3 col-md-6 footer-links">
+					<!-- <div class="col-lg-3 col-md-6 footer-links">
 						<h4>Our Services</h4>
 						<ul>
 							<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -1063,16 +1081,16 @@
 							<li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
 							<li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
 						</ul>
-					</div>
+					</div> -->
 
-					<div class="col-lg-4 col-md-6 footer-newsletter">
+					<!-- <div class="col-lg-4 col-md-6 footer-newsletter">
 						<h4>Our Newsletter</h4>
 						<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
 						<form action="" method="post">
 							<input type="email" name="email"><input type="submit" value="Subscribe">
 						</form>
 
-					</div>
+					</div> -->
 
 				</div>
 			</div>
@@ -1101,8 +1119,7 @@
 	<script src="assets/vendor/php-email-form/validate.js"></script>
 
 	<!-- Template Main JS File -->
-	
-	<script src="assets/js/load_images.js"></script>
+
 	<script src="assets/js/main.js"></script>
 </body>
 

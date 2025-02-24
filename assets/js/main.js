@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -117,7 +117,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -126,7 +126,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -136,7 +136,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -185,9 +185,9 @@
 
       let menuFilters = select('#menu-flters li', true);
 
-      on('click', '#menu-flters li', function(e) {
+      on('click', '#menu-flters li', function (e) {
         e.preventDefault();
-        menuFilters.forEach(function(el) {
+        menuFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -195,7 +195,7 @@
         menuIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        menuIsotope.on('arrangeComplete', function() {
+        menuIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -275,5 +275,319 @@
       mirror: false
     })
   });
+
+  // -------------------------------------------------------------------------------------
+
+
+  // // Function to initialize the slider
+  // function initializeSlider(sliderContainerId, images) {
+  //   const sliderContainer = document.querySelector(`#${sliderContainerId}`);
+  //   const slider = sliderContainer.querySelector('.slider');
+  //   const dotsContainer = sliderContainer.querySelector('.dots');
+  //   const prevBtn = sliderContainer.querySelector('.prev');
+  //   const nextBtn = sliderContainer.querySelector('.next');
+
+  //   let currentIndex = 0; // Tracks the current slide index
+  //   let autoSlideInterval; // Will hold the interval ID for auto-sliding
+
+  //   // Create slides and dots dynamically based on the images array
+  //   images.forEach((imageSrc, index) => {
+  //     // Create slide
+  //     const slide = document.createElement('div');
+  //     slide.classList.add('slide');
+  //     slide.innerHTML = `<img src="${imageSrc}" alt="Slide ${index + 1}">`;
+  //     slider.appendChild(slide);
+
+  //     // Create dot
+  //     const dot = document.createElement('span');
+  //     dot.classList.add('dot');
+  //     dot.dataset.index = index;
+  //     dotsContainer.appendChild(dot);
+  //   });
+
+  //   const slides = slider.querySelectorAll('.slide');
+  //   const dots = dotsContainer.querySelectorAll('.dot');
+
+  //   // Function to update the active dot indicator
+  //   function updateDots() {
+  //     dots.forEach((dot, index) => {
+  //       if (index === currentIndex) {
+  //         dot.classList.add('active');
+  //       } else {
+  //         dot.classList.remove('active');
+  //       }
+  //     });
+  //   }
+
+  //   // Function to display a specific slide based on the index
+  //   function showSlides(index) {
+  //     if (index >= slides.length) {
+  //       currentIndex = 0; // Reset to first slide if at the end
+  //     } else if (index < 0) {
+  //       currentIndex = slides.length - 1; // Go to last slide if at the beginning
+  //     } else {
+  //       currentIndex = index; // Otherwise, set to the provided index
+  //     }
+  //     slider.style.transform = `translateX(-${currentIndex * 100}%)`; // Slide transition
+  //     updateDots(); // Update the dots to reflect the current slide
+  //   }
+
+  //   // Function to move to the next slide
+  //   function nextSlide() {
+  //     showSlides(currentIndex + 1);
+  //   }
+
+  //   // Function to move to the previous slide
+  //   function prevSlide() {
+  //     showSlides(currentIndex - 1);
+  //   }
+
+  //   // Start the automatic sliding of images
+  //   function startAutoSlide() {
+  //     autoSlideInterval = setInterval(nextSlide, 4000); // Slide every 4 seconds
+  //   }
+
+  //   // Stop the automatic sliding
+  //   function stopAutoSlide() {
+  //     clearInterval(autoSlideInterval); // Clear the interval
+  //   }
+
+  //   // Add click event listeners to dots for direct slide navigation
+  //   dots.forEach(dot => {
+  //     dot.addEventListener('click', () => {
+  //       stopAutoSlide(); // Stop auto-slide when manually selecting a slide
+  //       showSlides(parseInt(dot.dataset.index)); // Show the selected slide
+  //       startAutoSlide(); // Restart auto-slide
+  //     });
+  //   });
+
+  //   // Add event listeners for navigation buttons
+  //   nextBtn.addEventListener('click', nextSlide);
+  //   prevBtn.addEventListener('click', prevSlide);
+
+  //   // Stop auto-slide when the mouse enters the slider container
+  //   sliderContainer.addEventListener('mouseover', stopAutoSlide);
+
+  //   // Restart auto-slide when the mouse leaves the slider container
+  //   sliderContainer.addEventListener('mouseout', startAutoSlide);
+
+  //   // Start auto-slide when the page loads
+  //   startAutoSlide();
+  //   updateDots(); // Initialize the dots
+  // }
+
+  // // Function to fetch images from the backend and initialize the slider
+  // function loadImagesForSlider(sliderId, folderPath) {
+  //   fetch(`/get-images-from-folder/${folderPath}`)
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       if (data.images) {
+  //         const images = data.images; // Get the image paths from the backend
+  //         initializeSlider(sliderId, images); // Initialize the slider with the image paths
+  //       } else {
+  //         console.error('No images found or an error occurred.');
+  //       }
+  //     })
+  //     .catch(error => console.error('Error fetching images:', error));
+  // }
+
+  // // Example usage: Load images for the slider from a specific folder
+  // loadImagesForSlider('slider1', 'folder1'); // Replace 'folder1' with the actual folder path
+
+
+
+
+  // ---------------------------------------------------------------------------------
+  // function to load images 
+  // TODO: make it to load from google drive 
+
+  function loadSliderImages(folderPath, sliderName) {
+
+    fetch(`${folderPath}`)
+      .then(response => response.json())
+      .then(data => {
+        const images = data.images;
+        console.log("hererererere333", data.images);
+        const slider = document.querySelector(`#${sliderName} .slider`);
+        console.log(slider, "slider var");
+        const dotsContainer = document.querySelector(`#${sliderName} + .dots-container`);
+        console.log( dotsContainer, " dotsContainer var");
+        let currentIndex = 0;
+        console.log("hererererere333");
+        if (!slider || !dotsContainer) {
+          console.error(`Slider or dots container with id ${sliderName} not found!`);
+          return; // Exit the function if elements are missing
+        }
+  
+        // Clear existing content
+        slider.innerHTML = '';
+        dotsContainer.innerHTML = '';
+        console.log("hererererere4444");
+        
+        // Create slides and dots dynamically
+        images.forEach((image, index) => {
+          const slide = document.createElement('div');
+          slide.classList.add('slide');
+          slide.innerHTML = `<img src="${image}" alt="Image ${index + 1}">`;
+          slider.appendChild(slide);
+
+          // Create dots for navigation
+          const dot = document.createElement('span');
+          dot.classList.add('dot');
+          dot.setAttribute('data-index', index);
+          dotsContainer.appendChild(dot);
+          console.log("hererererere");
+        });
+
+        // Add event listeners to the dots
+        document.querySelectorAll(`#${sliderName} .dot`).forEach(dot => {
+          dot.addEventListener('click', (e) => {
+            currentIndex = parseInt(e.target.dataset.index);
+            showSlides(currentIndex, slider, dotsContainer);
+            console.log("hererererere2222222");
+          });
+        });
+
+        // Initialize slider
+        showSlides(currentIndex, slider, dotsContainer);
+
+        // Event listeners for navigation buttons
+        document.querySelector(`#${sliderName} .next`).addEventListener('click', () => {
+          currentIndex++;
+          showSlides(currentIndex, slider, dotsContainer);
+        });
+
+        document.querySelector(`#${sliderName} .prev`).addEventListener('click', () => {
+          currentIndex--;
+          showSlides(currentIndex, slider, dotsContainer);
+        });
+        console.log("aaaaaaaaaaaaaaaaaaaaa",document.querySelector(`#${sliderName} .slider`));
+      })
+      .catch(error => console.error('Error loading images:', error));
+  }
+
+  // Function to show slides based on index
+  function showSlides(index, slider, dotsContainer) {
+    const images = slider.querySelectorAll('.slide');
+    const dots = dotsContainer.querySelectorAll('.dot');
+
+    if (index >= images.length) index = 0;
+    if (index < 0) index = images.length - 1;
+
+    const transformValue = `translateX(-${index * 100}%)`;
+    slider.style.transform = transformValue;
+
+    // Update dots
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+
+
+  // Call the function with the folder and slider name
+  document.addEventListener('DOMContentLoaded', function () {
+    loadSliderImages('assets/js/json_files/meny_images.json', 'slider1')
+    loadSliderImages('assets/js/json_files/galery_images.json', 'slider2')
+  });
+
+
+
+
+
+
+
+
+  // const slider = document.querySelector('.slider');
+  // const slides = document.querySelectorAll('.slide');
+  // const prevBtn = document.querySelector('.prev');
+  // const nextBtn = document.querySelector('.next');
+  // const dots = document.querySelectorAll('.dot');
+  // const sliderContainer = document.querySelector('.slider-container');
+
+  // let currentIndex = 0; // Tracks the current slide index
+  // let autoSlideInterval; // Will hold the interval ID for auto-sliding
+
+  // // Function to update the active dot indicator
+  // function updateDots() {
+  //   dots.forEach((dot, index) => {
+  //     if (index === currentIndex) {
+  //       dot.classList.add('active');
+  //     } else {
+  //       dot.classList.remove('active');
+  //     }
+  //   });
+  // }
+
+  // // Function to display a specific slide based on the index
+  // function showSlides(index) {
+  //   if (index >= slides.length) {
+  //     currentIndex = 0; // Reset to first slide if at the end
+  //   } else if (index < 0) {
+  //     currentIndex = slides.length - 1; // Go to last slide if at the beginning
+  //   } else {
+  //     currentIndex = index; // Otherwise, set to the provided index
+  //   }
+  //   slider.style.transform = `translateX(-${currentIndex * 100}%)`; // Slide transition
+  //   updateDots(); // Update the dots to reflect the current slide
+  // }
+
+  // // Function to move to the next slide
+  // function nextSlide() {
+  //   showSlides(currentIndex + 1);
+  // }
+
+  // // Function to move to the previous slide
+  // function prevSlide() {
+  //   showSlides(currentIndex - 1);
+  // }
+
+  // // Start the automatic sliding of images
+  // function startAutoSlide() {
+  //   autoSlideInterval = setInterval(nextSlide, 4000); // Slide every 4 seconds
+  // }
+
+  // // Stop the automatic sliding
+  // function stopAutoSlide() {
+  //   clearInterval(autoSlideInterval); // Clear the interval
+  // }
+
+  // // Add click event listeners to dots for direct slide navigation
+  // dots.forEach(dot => {
+  //   dot.addEventListener('click', () => {
+  //     stopAutoSlide(); // Stop auto-slide when manually selecting a slide
+  //     showSlides(parseInt(dot.dataset.index)); // Show the selected slide
+  //     startAutoSlide(); // Restart auto-slide
+  //   });
+  // });
+
+  // // Add event listeners for navigation buttons
+  // nextBtn.addEventListener('click', nextSlide);
+  // prevBtn.addEventListener('click', prevSlide);
+
+  // // Stop auto-slide when the mouse enters the slider container
+  // sliderContainer.addEventListener('mouseover', stopAutoSlide);
+
+  // // Restart auto-slide when the mouse leaves the slider container
+  // sliderContainer.addEventListener('mouseout', startAutoSlide);
+
+  // // Start auto-slide when the page loads
+  // startAutoSlide();
+  // updateDots(); // Initialize the dots
+
+  // ********************************
+
+
+
+
+
+
+
+
+
+
 
 })()
