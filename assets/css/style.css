@@ -1133,7 +1133,13 @@ section {
   background: var(--hover-color);
 }
 
-
+.disclaimer {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+}
 
 
 /*--------------------------------------------------------------
@@ -1759,14 +1765,12 @@ section {
 	line-height: 1;
 	font-weight: 300;
 	text-transform: uppercase;
-	font-family: "Poppins", sans-serif;
 }
 
 #footer .footer-top .footer-info p {
 	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 0;
-	font-family: "Playfair Display", serif;
 	color: #fff;
 }
 
