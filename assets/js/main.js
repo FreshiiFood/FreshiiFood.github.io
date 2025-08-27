@@ -407,13 +407,11 @@
       .then(response => response.json())
       .then(data => {
         const images = data.images;
-        console.log("hererererere333", data.images);
         const slider = document.querySelector(`#${sliderName} .slider`);
         console.log(slider, "slider var");
         const dotsContainer = document.querySelector(`#${sliderName} + .dots-container`);
         console.log( dotsContainer, " dotsContainer var");
         let currentIndex = 0;
-        console.log("hererererere333");
         if (!slider || !dotsContainer) {
           console.error(`Slider or dots container with id ${sliderName} not found!`);
           return; // Exit the function if elements are missing
@@ -422,7 +420,6 @@
         // Clear existing content
         slider.innerHTML = '';
         dotsContainer.innerHTML = '';
-        console.log("hererererere4444");
         
         // Create slides and dots dynamically
         images.forEach((image, index) => {
@@ -436,7 +433,6 @@
           dot.classList.add('dot');
           dot.setAttribute('data-index', index);
           dotsContainer.appendChild(dot);
-          console.log("hererererere");
         });
 
         // Add event listeners to the dots
@@ -444,7 +440,7 @@
           dot.addEventListener('click', (e) => {
             currentIndex = parseInt(e.target.dataset.index);
             showSlides(currentIndex, slider, dotsContainer);
-            console.log("hererererere2222222");
+
           });
         });
 
@@ -461,7 +457,6 @@
           currentIndex--;
           showSlides(currentIndex, slider, dotsContainer);
         });
-        console.log("aaaaaaaaaaaaaaaaaaaaa",document.querySelector(`#${sliderName} .slider`));
       })
       .catch(error => console.error('Error loading images:', error));
   }
@@ -496,6 +491,17 @@
 
 
 
+document.getElementById("downloadMenu").addEventListener("click", function () {
+  const link = document.createElement("a");
+  link.href = "assets/menupdf/menu.pdf"; // path to your PDF file
+  const now = new Date();
+  const dateStr = now.getFullYear() +
+                  ("0" + (now.getMonth()+1)).slice(-2) +
+                  ("0" + now.getDate()).slice(-2);
+  let filename = `Freshii-Menu_${dateStr}.pdf`;
+  link.download = filename; // file name on download
+  link.click();
+});
 
 
 

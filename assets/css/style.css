@@ -1026,6 +1026,9 @@ section {
 	display: flex; /* Enables flexbox layout to line up slides horizontally */
 	transition: transform 0.4s ease-in-out; /* Smooth transition when sliding between images */
 }
+#slider1 .slide {
+  height: 800px; /* or 800px depending on readability */
+}
 
 /* Each individual slide - takes up full width of the container */
 .slide {
@@ -1039,6 +1042,12 @@ section {
 	width: 100%; /* Image width matches the slide width */
 	height: 100%; /* Image height matches the slide height */
 	object-fit: cover; /* Images are scaled to cover the entire slide, cropping if necessary */
+	border-radius: 10px; /* Rounds the corners of the images to match the slider */
+}
+#slider1 .slide img {
+	width: 100%; /* Image width matches the slide width */
+	height: 100%; /* Image height matches the slide height */
+	object-fit: contain; /* Images are scaled to cover the entire slide, cropping if necessary */
 	border-radius: 10px; /* Rounds the corners of the images to match the slider */
 }
 
@@ -1102,9 +1111,27 @@ section {
 	background-color: rgba(255, 255, 255, 1); /* Solid white background for the active dot */
 }
 
+/* DOWNLOAD BUTTON STYLES */
 
+.download-btn {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.download-btn button {
+  background: var(--primary-color);
+  color: var(--cokolate-color);
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 
+.download-btn button:hover {
+  background: var(--hover-color);
+}
 
 
 
